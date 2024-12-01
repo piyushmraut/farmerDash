@@ -1,0 +1,121 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dashboard {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading and Paragraph Styling */
+  .dashboard h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .dashboard p {
+    font-size: 20px;
+    color: #4b5563;
+    max-width: 850px;
+    margin: 0 auto 40px auto;
+    line-height: 1.7;
+    font-weight: 300;
+  }
+  
+  /* Millet Info Section Styling */
+  .millet-info {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .millet-info h3 {
+    font-size: 32px;
+    color: #1e3a8a;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: left;
+    text-transform: capitalize;
+  }
+  
+  .millet-info p {
+    font-size: 18px;
+    color: #6b7280;
+    line-height: 1.8;
+    text-align: left;
+    font-weight: 400;
+  }
+  
+  .millet-info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .millet-info ul li {
+    font-size: 18px;
+    color: #333;
+    margin: 15px 0;
+    line-height: 1.8;
+  }
+  
+  .millet-info ul li strong {
+    font-weight: 600;
+    color: #1e3a8a;
+  }
+  
+  /* Styling for Buttons or Call to Action (CTA) */
+  .millet-info button {
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #1e3a8a;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .millet-info button:hover {
+    background-color: #4f7ce6;
+    transform: translateY(-5px);
+  }
+  
+  /* Animation for elements */
+  .dashboard h2,
+  .millet-info h3 {
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .millet-info p,
+  .millet-info ul li {
+    animation: fadeIn 1.2s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
