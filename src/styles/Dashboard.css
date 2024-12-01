@@ -1,121 +1,97 @@
-/* General Body Styling */
+/* Dashboard.css */
+
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f3f4f6;
-    margin: 0;
-    padding: 0;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.dashboard {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.dashboard h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.dashboard p {
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+.millet-info h3 {
+  color: #27ae60;
+  margin-top: 20px;
+}
+
+.millet-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.millet-info ul li {
+  background-color: #ecf0f1;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.millet-info ul li strong {
+  color: #34495e;
+}
+
+.millet-info p {
+  color: #34495e;
+}
+
+.millet-info ul li:hover {
+  background-color: #d1e7dd;
+  transition: background-color 0.3s ease;
+}
+
+/* Section-specific styling */
+.millet-info .section-title {
+  margin-top: 40px;
+  text-align: left;
+  font-size: 1.5em;
+  color: #2980b9;
+  border-bottom: 2px solid #2980b9;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.millet-info .market-prices ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.millet-info .market-prices ul li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fdfefe;
+  border: 1px solid #bdc3c7;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
   .dashboard {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #ffffff;
-    max-width: 1200px;
-    margin: 40px auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px;
   }
-  
-  /* Heading and Paragraph Styling */
-  .dashboard h2 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #1e3a8a;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  .dashboard p {
-    font-size: 20px;
-    color: #4b5563;
-    max-width: 850px;
-    margin: 0 auto 40px auto;
-    line-height: 1.7;
-    font-weight: 300;
-  }
-  
-  /* Millet Info Section Styling */
-  .millet-info {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  }
-  
-  .millet-info h3 {
-    font-size: 32px;
-    color: #1e3a8a;
-    font-weight: 600;
-    margin-bottom: 20px;
-    text-align: left;
-    text-transform: capitalize;
-  }
-  
-  .millet-info p {
-    font-size: 18px;
-    color: #6b7280;
-    line-height: 1.8;
-    text-align: left;
-    font-weight: 400;
-  }
-  
-  .millet-info ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-  }
-  
+
   .millet-info ul li {
-    font-size: 18px;
-    color: #333;
-    margin: 15px 0;
-    line-height: 1.8;
+    font-size: 0.9em;
+    padding: 8px 10px;
   }
-  
-  .millet-info ul li strong {
-    font-weight: 600;
-    color: #1e3a8a;
-  }
-  
-  /* Styling for Buttons or Call to Action (CTA) */
-  .millet-info button {
-    padding: 12px 30px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #fff;
-    background-color: #1e3a8a;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    margin-top: 30px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .millet-info button:hover {
-    background-color: #4f7ce6;
-    transform: translateY(-5px);
-  }
-  
-  /* Animation for elements */
-  .dashboard h2,
-  .millet-info h3 {
-    animation: fadeIn 1s ease-out;
-  }
-  
-  .millet-info p,
-  .millet-info ul li {
-    animation: fadeIn 1.2s ease-out;
-  }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+}
